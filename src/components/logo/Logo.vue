@@ -6,7 +6,8 @@ export default {
 
 <template>
   <div class="logo">
-    <svg viewBox="0 0 600 300">
+    <div class="awesomble">AWESOMBLE</div>
+    <svg viewBox="0 0 300 100" v-if="false">
       <symbol id="s-text">
         <text text-anchor="middle" x="50%" y="50%" dy=".35em">
           어썸블
@@ -28,12 +29,25 @@ export default {
 
 <style scoped lang="scss">
 /* Main styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
 .logo {
-  font-size: 20vw;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .awesomble {
+    padding: 0 15px;
+    text-align: center;
+    font-size: 10vw;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+  }
   .text {
     fill: none;
-    stroke-width: 2.5;
+    stroke-width: 1px;
     stroke-linejoin: round;
     stroke-dasharray: 30 100;
     stroke-dashoffset: 0;
