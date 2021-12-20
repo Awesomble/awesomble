@@ -30,7 +30,7 @@ export default {
 <style scoped lang="scss">
 /* Main styles */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
 .logo {
   padding: 5rem 0;
   display: flex;
