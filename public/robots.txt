@@ -1,4 +1,20 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
-Sitemap: https://www.awesomble.com/sitemap.xml
+[
+    {
+        "source": "https://awesomble.com",
+        "target": "https://www.awesomble.com",
+        "status": "302",
+        "condition": null
+    },
+    {
+        "source": "/<*>",
+        "target": "/index.html",
+        "status": "404-200",
+        "condition": null
+    },
+    {
+        "source": "</^[^.]+$|\\.(?!(xml|css|gif|ico|jpg|js|png|txt|svg|woff|ttf|map|json)$)([^.]+$)/>",
+        "target": "/index.html",
+        "status": "200",
+        "condition": null
+    }
+]
