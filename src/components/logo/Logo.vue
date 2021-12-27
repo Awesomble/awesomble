@@ -1,7 +1,4 @@
-<script>
-export default {
-  name: "Logo"
-}
+<script setup lang="ts">
 </script>
 
 <template>
