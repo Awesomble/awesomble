@@ -18,6 +18,10 @@ export default defineComponent({
         <img src="@/assets/images/ico_salary.png" alt="어썸블 월급 계산기" />
         <p>월급 계산기</p>
       </a>
+      <a href="javascript:alert('준비중입니다.')">
+        <img src="@/assets/images/ico_apt.png" alt="어썸블 아파트 가점 계산기" />
+        <p>아파트 가점계산기</p>
+      </a>
     </div>
   </div>
 </template>
@@ -31,6 +35,7 @@ export default defineComponent({
      display: flex;
      align-items: center;
      flex-direction: column;
+     margin-right: 30px;
      img {
        width: 50px;
        height: 50px;
