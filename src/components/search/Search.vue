@@ -1,6 +1,6 @@
-<script>
-export default {
-  name: "Search"
+<script setup lang="ts">
+const search = () : void  => {
+  alert('준비중입니다.')
 }
 </script>
 
@@ -9,7 +9,7 @@ export default {
     <form onsubmit="event.preventDefault();" role="search">
       <label for="search">검색</label>
       <input id="search" type="search" placeholder=" " autofocus required />
-      <button type="submit">A</button>
+      <button type="submit" @click="search">A</button>
     </form>
   </div>
 </template>
