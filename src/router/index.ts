@@ -1,24 +1,37 @@
-import { createRouter, createWebHistory, Router, RouteRecordRaw } from 'vue-router'
+import {
+  createRouter, createWebHistory, Router, RouteRecordRaw,
+} from 'vue-router';
+
 const routes: Array<RouteRecordRaw> = [
-    {
+  {
+    path: '/',
+    name: 'DftBase',
+    component: () => import('../container/DftBase.vue'),
+    children: [
+      {
         path: '/',
-        name: 'DftBase',
-        component: () => import('../container/DftBase.vue'),
-        children: [
-            {
-                path: '/',
-                name: 'Home',
-                component: () => import('../pages/Home.vue'),
-            }
-        ]
-
-
-    }
-]
+        name: 'Home',
+        component: () => import('../pages/Home.vue'),
+      },
+    ],
+  },
+  {
+    path: '/guide',
+    name: 'Guide',
+    component: () => import('../guide/Guide.vue'),
+    // children: [
+    //   {
+    //     path: '/',
+    //     name: 'Home',
+    //     component: () => import('../pages/Home.vue'),
+    //   },
+    // ],
+  },
+];
 
 const router: Router = createRouter({
-    history: createWebHistory(),
-    routes
-})
+  history: createWebHistory(),
+  routes,
+});
 
-export default router
+export default router;

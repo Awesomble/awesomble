@@ -1,16 +1,16 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from '@/router'
-import { key, store } from '@/store'
-import { createGtm } from 'vue-gtm'
+import { createApp } from 'vue';
+import { createGtm } from 'vue-gtm';
+import App from './App.vue';
+import router from '@/router';
+import { key, store } from '@/store';
 
-const app = createApp(App)
+const app = createApp(App);
 
 app.use(
-    createGtm({
-        id: 'GTM-W2D3MXC'
-    })
-)
+  createGtm({
+    id: 'GTM-W2D3MXC',
+  }),
+);
 
 // @ts-ignore
-createApp(App).use(router).use(store, key).mount('#app')
+createApp(App).use(router).use(store, key).mount('#app');
