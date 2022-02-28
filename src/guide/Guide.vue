@@ -16,9 +16,9 @@ export default defineComponent({
     <section>
       <h2>01. Colors</h2>
       <div class="cont">
-        <div class="abs-flex st">
+        <div class="asb-flex st">
           <span>Brand Colors</span>
-          <div class="abs-flex">
+          <div class="asb-flex">
             <div>
               <div class="primary" style="width:30px; height:30px;"></div>
             </div>
@@ -56,10 +56,10 @@ export default defineComponent({
   }
 }
 
-.abs-flex{
+.asb-flex{
   display:flex;
 }
-.abs-flex.st{
+.asb-flex.st{
   align-items: start;
   justify-content: space-between;
 }
