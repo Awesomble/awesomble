@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import './styles'
 import router from '@/router'
 import { key, store } from '@/store'
 import { createGtm } from 'vue-gtm'
