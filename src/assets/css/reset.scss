@@ -19,3 +19,15 @@ a:active, a:hover {text-decoration:none}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 * {box-sizing:border-box;}
 .hidden {visibility:hidden;position:absolute;left:-9999em;width:1px;height:1px;margin:0;padding:0;background:none;font-size:0;line-height:0;text-indent:-9999em}
+
+html, body {
+  //background-color: $evm-primary;
+  font-family: 'SCDream', sans-serif;
+  font-size: $font-size;
+  color: $asb-primary;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
