@@ -11,40 +11,29 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
-    <logo />
-    <search />
-    <div class="direct-app">
-      <a href="https://salary.awesomble.com">
-        <img src="@/assets/images/ico_salary.png" alt="어썸블 월급 계산기" />
-        <p>월급 계산기</p>
-      </a>
-      <a href="javascript:alert('준비중입니다.')">
-        <img src="@/assets/images/ico_apt.png" alt="어썸블 아파트 가점 계산기" />
-        <p>아파트 가점계산기</p>
-      </a>
-    </div>
-  </div>
+  <ul class="asb-visual">
+    <li>
+      <div class="asb-intro">
+        <strong class="asb-tit">
+          Get instant help<br/>
+          whenever you need ,<br/>
+          we are there
+        </strong>
+        <p class="asb-subTit">Do you face any trouble with your vehicles?</p>
+        <p class="asb-desc">Many time suddenly we got fallen into a bad
+          situation with our vehicles Don’t worry like this situation,
+          we are here to help you . </p>
+      </div>
+    </li>
+  </ul>
 </template>
 
 <style lang="scss">
- .direct-app {
-   margin-top: 50px;
-   display: flex;
-   justify-content: center;
-   a {
-     display: flex;
-     align-items: center;
-     flex-direction: column;
-     margin-right: 30px;
-     img {
-       width: 50px;
-       height: 50px;
-     }
-     p {
-       margin-top: 10px;
-       font-size: 14px;
-     }
-   }
- }
+.asb-visual{
+  .asb-intro{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+}
 </style>
