@@ -13,7 +13,7 @@ export default defineComponent({
 <template>
   <ul class="asb-visual">
     <li>
-      <div class="asb-intro">
+      <div class="asb-intro vis-main">
         <strong class="asb-tit">
           Get instant help<br/>
           whenever you need ,<br/>
@@ -27,13 +27,3 @@ export default defineComponent({
     </li>
   </ul>
 </template>
-
-<style lang="scss">
-.asb-visual{
-  .asb-intro{
-    display:block;
-    width:100%;
-    height:auto;
-  }
-}
-</style>

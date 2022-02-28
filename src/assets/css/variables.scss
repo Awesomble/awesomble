@@ -1,10 +1,25 @@
 /*========== Custome Variable ==========*/
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+@function get-vw($px){
+  @return #{strip-unit($px) * 100 / 375}vw;
+}
+
 // App Global Font Size
-$font-size:              14px;
+$font-size:              get-vw(14px);
+
+//Font Weight
+$bold: 700;
+$normal: 400;
 
 //App Background Scale
 $asb-primary: 				#FFCC00 !default;
 $asb-secondary:         		#2E2E2E !default;
+$asb-white:         		#FFFFFF !default;
 $asb-success: 					#00D014 !default;
 $asb-info: 						#484848 !default;
 $asb-warning: 					#FFB70F !default;
@@ -18,12 +33,3 @@ $asb-ipt-default: 					#FAFAFA !default;
 $asb-ipt-active: 					$asb-primary !default;
 $asb-ipt-disabled: 					#CACACA !default;
 
-@function strip-unit($number) {
-  @if type-of($number) == 'number' and not unitless($number) {
-    @return $number / ($number * 0 + 1);
-  }
-  @return $number;
-}
-@function get-vw($px){
-  @return #{strip-unit($px) * 100 / 375}vw;
-}

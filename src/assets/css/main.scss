@@ -1,0 +1,26 @@
+.asb-visual{
+  .asb-intro{
+    display:block;
+    width:100%;
+    height:auto;
+    padding:get-vw(20px);
+    &.vis-main{
+      color: $asb-white;
+      background:linear-gradient(180deg, #FA9DAA 0%, #FBACB9 100%);
+    }
+    .asb-tit{
+      font-size:get-vw(20px);
+      font-weight:$bold;
+      + .asb-subTit{
+        margin-top:get-vw(10px);
+      }
+    }
+    .asb-subTit{
+      font-size:get-vw(16px);
+      font-weight:$normal;
+      + .asb-desc{
+        margin-top:get-vw(10px);
+      }
+    }
+  }
+}
