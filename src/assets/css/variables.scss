@@ -1,0 +1,29 @@
+/*========== Custome Variable ==========*/
+// App Global Font Size
+$font-size:              14px;
+
+//App Background Scale
+$evm-primary: 				#FFCC00 !default;
+$evm-secondary:         		#2E2E2E !default;
+$evm-success: 					#00D014 !default;
+$evm-info: 						#484848 !default;
+$evm-warning: 					#FFB70F !default;
+$evm-danger: 					#FF3739 !default;
+$evm-default: 					#F4F4F4 !default;
+$evm-disabled: 					#AAA !default;
+$evm-btn-active: 					#222 !default;
+$evm-btn-default: 					#FAFAFA !default;
+$evm-btn-disabled: 					#CACACA !default;
+$evm-ipt-default: 					#FAFAFA !default;
+$evm-ipt-active: 					$evm-primary !default;
+$evm-ipt-disabled: 					#CACACA !default;
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+@function get-vw($px){
+  @return #{strip-unit($px) * 100 / 375}vw;
+}
