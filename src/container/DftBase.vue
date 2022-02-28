@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import HeaderArea from '@/components/common/Header.vue'
+import FooterArea from '@/components/common/Footer.vue'
 </script>
 <template>
-  <main class="main">
-    <router-view />
-  </main>
+  <header-area />
+  <router-view />
+  <footer-area />
 </template>
