@@ -5,5 +5,5 @@ import FooterArea from '@/components/common/Footer.vue'
 <template>
   <header-area />
   <router-view />
-  <footer-area v-if="false" />
+  <footer-area v-if="true" />
 </template>
