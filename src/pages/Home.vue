@@ -34,13 +34,23 @@ export default defineComponent({
         <span class="asb-index">Our Business</span>
         <em class="asb-tit">Perfect Soluation For your Vehicles.</em>
       </div>
-      <ul>
+      <ul class="business-list">
         <li>
           <div class="asb-card">
-
+            <em class="asb-tit">Vehicles Washing</em>
+            <p class="asb-desc">You can wash your vehicles anytime and anywhere</p>
+            <a href="#javascript:;">Explore it</a>
           </div>
         </li>
       </ul>
+    </div>
+  </section>
+  <section>
+    <div>
+      <div class="asb-titArea">
+        <span class="asb-index">We are on Everywhere</span>
+        <em class="asb-tit">Get Instant service from anywhere you located</em>
+      </div>
     </div>
   </section>
 </template>

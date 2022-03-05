@@ -29,13 +29,20 @@
   }
 }
 
-.asb-index{
+
+.asb-titArea{
+  text-align:center;
+  .asb-index{
+    font-size:get-vw(16px);
+  }
+  .asb-tit{
+    display:block;
+    font-size:get-vw(20px);
+    color:#000;
+  }
 }
 .asb-business{
   padding:get-vw(20px);
-  .asb-titArea{
-
-  }
 }
 .asb-card{
 }
