@@ -31,7 +31,7 @@ export default defineComponent({
   <section>
     <div class="asb-business">
       <div class="asb-titArea">
-        <span>Our Business</span>
+        <span class="asb-index">Our Business</span>
         <em class="asb-tit">Perfect Soluation For your Vehicles.</em>
       </div>
       <ul>
