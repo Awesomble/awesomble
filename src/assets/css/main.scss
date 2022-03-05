@@ -1,3 +1,4 @@
+/*main visual*/
 .asb-visual{
   .asb-intro{
     position:relative;
@@ -28,8 +29,9 @@
     background-position:100% center, center center;
   }
 }
-
-
+section:not(.asb-visual){
+  padding:get-vw(20px);
+}
 .asb-titArea{
   text-align:center;
   .asb-index{
@@ -40,9 +42,6 @@
     font-size:get-vw(20px);
     color:#000;
   }
-}
-.asb-business{
-  padding:get-vw(20px);
 }
 .asb-card{
 }
