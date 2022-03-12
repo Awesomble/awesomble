@@ -29,6 +29,8 @@
     background-position:100% center, center center;
   }
 }
+
+/* common */
 section:not(.asb-visual){
   padding:get-vw(20px);
 }
@@ -44,4 +46,32 @@ section:not(.asb-visual){
   }
 }
 .asb-card{
+  .asb-tit{
+    display:block;
+    font-size:get-vw(16px);
+    &::before{
+      content:'';
+      display:block;
+      width:get-vw(80px);
+      height:get-vw(100px);
+      background:#FFF;
+    }
+  }
+  .asb-desc{}
+  .btn-link{
+    display:inline-block;
+    padding:get-vw(10px) get-vw(20px);
+    background:#000;
+    color:#FFF;
+    border-radius: get-vw(6px);
+    > span::after{
+      content:'';
+      display:inline-block;
+      width:get-vw(8px);
+      height:get-vw(8px);
+      border-top:1px solid #FFF;
+      border-right:1px solid #FFF;
+      transform: rotate(45deg);
+    }
+  }
 }

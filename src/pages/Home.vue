@@ -39,7 +39,21 @@ export default defineComponent({
           <div class="asb-card">
             <em class="asb-tit">Vehicles Washing</em>
             <p class="asb-desc">You can wash your vehicles anytime and anywhere</p>
-            <a href="#javascript:;">Explore it</a>
+            <a href="#javascript:;" class="btn-link"><span>Explore it</span></a>
+          </div>
+        </li>
+        <li>
+          <div class="asb-card">
+            <em class="asb-tit">Vehicles Washing</em>
+            <p class="asb-desc">You can wash your vehicles anytime and anywhere</p>
+            <a href="#javascript:;" class="btn-link"><span>Explore it</span></a>
+          </div>
+        </li>
+        <li>
+          <div class="asb-card">
+            <em class="asb-tit">Vehicles Washing</em>
+            <p class="asb-desc">You can wash your vehicles anytime and anywhere</p>
+            <a href="#javascript:;" class="btn-link"><span>Explore it</span></a>
           </div>
         </li>
       </ul>
