@@ -46,6 +46,8 @@ section:not(.asb-visual){
   }
 }
 .asb-card{
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
   .asb-tit{
     display:block;
     font-size:get-vw(16px);
@@ -63,7 +65,7 @@ section:not(.asb-visual){
     padding:get-vw(10px) get-vw(20px);
     background:#000;
     color:#FFF;
-    border-radius: get-vw(6px);
+    border-radius: 6px;
     > span::after{
       content:'';
       display:inline-block;
